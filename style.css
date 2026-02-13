@@ -42,7 +42,7 @@ text-align: center;
 
 main {
 max-width: 700px;
-margin: 40px auto;
+margin: 130px auto;
 border: 1px solid hsl(286, 89%, 22%);
 background-color: hsl(278, 42%, 87%);
 padding: 30px;
@@ -54,8 +54,10 @@ border-radius: 10px;
 background-color: hsl(279, 24%, 67%);
 max-width: 200px;
 padding: 10px;
-text-align: left;
+text-align: center;
 border-radius: 15px;
+position:absolute;
+left: 415px;
 }
 
 .caixa2 {
@@ -63,8 +65,11 @@ background-color: hsl(279, 24%, 67%);
 max-width: 220px;
 margin: 10px;
 padding: 10px;
-text-align: left;
+text-align: center;
 border-radius: 15px;
+position:absolute;
+left: 400px;
+bottom: 31%;
 }
 
 .caixa3 {
@@ -72,8 +77,10 @@ background-color: hsl(279, 24%, 67%);
 max-width: 240px;
 margin: 00px;
 padding: 10px;
-text-align: left;
+text-align: center;
 border-radius: 15px;
+position:absolute;
+left: 650px;
 }
 
 .caixa4 {
@@ -81,8 +88,12 @@ background-color: hsl(279, 24%, 67%);
 max-width: 180px;
 margin: 10px;
 padding: 10px;
-text-align: left;
+text-align: center;
 border-radius: 15px;
+border-radius: 15px;
+position:absolute;
+left: 665px;
+bottom: 31%;
 }
 
 img {
