@@ -50,50 +50,80 @@ width: 650px;
 border-radius: 10px;
 }
 
-.caixa {
-background-color: hsl(279, 24%, 67%);
-max-width: 200px;
-padding: 10px;
-text-align: center;
-border-radius: 15px;
-position:absolute;
-left: 415px;
+/* Barra superior */
+.topbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 20px;
+background-color: #222;
+color: #fff;
 }
 
-.caixa2 {
-background-color: hsl(279, 24%, 67%);
-max-width: 220px;
-margin: 10px;
-padding: 10px;
-text-align: center;
-border-radius: 15px;
-position:absolute;
-left: 400px;
-bottom: 31%;
+/* Menu (desktop) */
+.nav-list {
+list-style: none;
+display: flex;
+gap: 18px;
+margin: 0;
+padding: 0;
+}
+.nav-list a {
+color: #fff;
+
+text-decoration: none;
+padding: 8px 10px;
+border-radius: 6px;
+}
+.nav-list a:hover {
+background-color: rgba(255, 255, 255, 0.12);
+}
+/* Botão menu (mobile) — escondido por defeito */
+.menu-btn {
+display: none;
+cursor: pointer;
+user-select: none;
+padding: 8px 10px;
+border-radius: 6px;
+background-color: rgba(255,255,255,0.12);
+}
+/* Checkbox escondido */
+.menu-toggle {
+display: none;
+}
+/* Conteúdo */
+.conteudo {
+padding: 30px 20px;
+}
+/* MOBILE: até 768px */
+@media (max-width: 768px) {
+/* 1) Mostrar botão Menu */
+.menu-btn {
+display: inline-block;
+}
+/* 2) Menu passa a vertical e “colapsado” */
+.nav {
+position: absolute;
+left: 0;
+right: 0;
+top: 60px; /* ajusta se necessário */
+background-color: #222;
+padding: 10px 20px;
+display: none; /* escondido por defeito */
 }
 
-.caixa3 {
-background-color: hsl(279, 24%, 67%);
-max-width: 240px;
-margin: 00px;
-padding: 10px;
-text-align: center;
-border-radius: 15px;
-position:absolute;
-left: 650px;
+.nav-list {
+flex-direction: column;
+gap: 10px;
 }
-
-.caixa4 {
-background-color: hsl(279, 24%, 67%);
-max-width: 180px;
-margin: 10px;
-padding: 10px;
-text-align: center;
-border-radius: 15px;
-border-radius: 15px;
-position:absolute;
-left: 665px;
-bottom: 31%;
+/* 3) Quando o checkbox está “checked”, mostrar o menu */
+.menu-toggle:checked ~ .nav {
+display: block;
+}
+/* 4) Para evitar sobreposição estranha no topo */
+.topbar {
+position: relative;
+}
 }
 
 img {
